@@ -198,7 +198,7 @@ html {
 
 .grid5 {
     width: 300px;
-    height: 800px; 
+    height: 820px; 
     border-radius: 8px;
     box-shadow: 5px 5px 5px var(--color-lightgray);
     grid-row-start: 1;
