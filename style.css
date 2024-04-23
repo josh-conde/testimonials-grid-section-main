@@ -122,10 +122,14 @@ html {
 
 .grid2 h1 {
     color: var(--color-lightgray);
+    grid-column: 2 / span 2;
+    justify-self: first baseline;
 }
 
 .grid2 h2 {
     color: var(--color-lightgray);
+    grid-column: 2 / span 2;
+    justify-self: first baseline;
 }
 
 .grid2 p {
@@ -148,10 +152,14 @@ html {
 
 .grid3 h1 {
     color: var(--color-blackblue);
+    grid-column: 2 / span 2;
+    justify-self: first baseline;
 }
 
 .grid3 h2 {
     color: var(--color-blackblue);
+    grid-column: 2 / span 2;
+    justify-self: first baseline;
 }
 
 .grid3 p {
@@ -200,10 +208,14 @@ html {
 
 .grid5 h1 {
     color: var(--color-blackblue);
+    grid-column: 2 / span 2;
+    justify-self: first baseline;
 }
 
 .grid5 h2 {
     color: var(--color-blackblue);
+    grid-column: 2 / span 2;
+    justify-self: first baseline;
 }
 
 .grid5 p {
