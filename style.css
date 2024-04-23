@@ -42,6 +42,7 @@ html {
     justify-items: center;
     padding: 25px;
     text-align: left;
+    height: 100%;
 }
 
 .heading img {
