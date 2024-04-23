@@ -24,12 +24,12 @@ html {
 
 .main-container {
     display: grid;
-    width: 1300px;
-    height: 340px;
+    width: 1200px;
+    height: auto;
     max-width: 100%;
     margin: 0 auto;
     padding: 10px;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 400px);
     gap: 20px; 
 }
@@ -43,6 +43,7 @@ html {
     padding: 25px;
     text-align: left;
     height: 100%;
+    grid-auto-flow: column;
 }
 
 .heading img {
@@ -112,7 +113,7 @@ html {
 }
 
 .grid2 {
-    width: 300px;
+    width: 290px;
     height: 400px; 
     border-radius: 8px;
     background-color: var(--color-darkblue);
@@ -228,11 +229,60 @@ html {
 }
 
 .attribution { 
-    margin-top: 600px;
     font-size: 11px; 
     text-align: center; 
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .grid1 {
+        width: 355px;
+        height: 600px;
+    }
+
+    .grid1 h1 {
+        grid-column: 2 / span 2;
+        justify-self: first baseline;
+    }
+    .grid1 h2 {
+        grid-column: 2 / span 2;
+        justify-self: first baseline;
+    }
+    .grid2 {
+        width: 355px;
+        height: 300px;
+    }
+
+    .grid3 {
+        width: 355px;
+        height: 300px;
+    }
+
+    .grid4 {
+        width: 355px;
+        height: 600px;
+    }
+
+    .grid4 h1 {
+        grid-column: 2 / span 2;
+        justify-self: first baseline;
+    }
+    .grid4 h2 {
+        grid-column: 2 / span 2;
+        justify-self: first baseline;
+    }
+    .grid5 {
+        width: 355px;
+        height: 600px;
+    }
+
 }
