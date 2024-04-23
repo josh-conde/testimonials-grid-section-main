@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-violet:hsl(263, 55%, 52%);
+    --color-darkblue:hsl(217, 19%, 35%);
+    --color-blackblue:hsl(219, 29%, 14%);
+    --color-white:hsl(0, 0%, 100%);
+    --color-lightgray:hsl(0, 0%, 81%);
+    --color-lightblue:hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+    background-color: var(--color-lightblue);
+    font-family: "Barlow Semi Condensed", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.main-container {
+    display: grid;
+    width: 1300px;
+    height: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    gap: 20px; 
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    grid-template-rows: 25px 25px 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    padding: 25px;
+    text-align: left;
+}
+
+.heading img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    grid-row: 1 / 2;
+}
+
+.heading h1 {
+    grid-row-start: 1; 
+    grid-column-start: 2;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.heading h2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    opacity: .5;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.heading p {
+    grid-row-start: 3;
+    grid-column: 1 / span 3;
+    font-weight: 600;
+    font-size: 1.7rem; 
+}
+
+.heading h3 {
+    grid-row-start: 4;
+    grid-column: 1/ span 3;
+    opacity: .7;
+    font-weight: 400;
+}
+
+.grid1 {
+    width: 600px;
+    height: 400px; 
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-color: var(--color-violet);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px var(--color-lightgray);
+    grid-row-start: 1;
+    grid-column: 1 / span 2;
+}
+
+.grid1 h1 {
+    color: var(--color-lightgray);
+}
+
+.grid1 h2 {
+    color: var(--color-lightgray);
+}
+
+.grid1 p {
+    color: var(--color-white);
+}
+
+.grid1 h3 {
+    color: var(--color-lightgray);
+}
+
+.grid2 {
+    width: 300px;
+    height: 400px; 
+    border-radius: 8px;
+    background-color: var(--color-darkblue);
+    box-shadow: 5px 5px 5px var(--color-lightgray);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.grid2 h1 {
+    color: var(--color-lightgray);
+}
+
+.grid2 h2 {
+    color: var(--color-lightgray);
+}
+
+.grid2 p {
+    color: var(--color-white);
+}
+
+.grid2 h3 {
+    color: var(--color-lightgray);
+}
+
+.grid3 {
+    width: 300px;
+    height: 400px; 
+    border-radius: 8px;
+    background-color: var(--color-white);
+    box-shadow: 5px 5px 5px var(--color-lightgray);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid3 h1 {
+    color: var(--color-blackblue);
+}
+
+.grid3 h2 {
+    color: var(--color-blackblue);
+}
+
+.grid3 p {
+    color: var(--color-darkblue);
+}
+
+.grid3 h3 {
+    color: var(--color-blackblue);
+}
+
+.grid4 {
+    width: 600px;
+    height: 400px; 
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px var(--color-lightgray);
+    background-color: var(--color-blackblue);
+    grid-row-start: 2;
+    grid-column: 2 / span 2;
+}
+
+.grid4 h1 {
+    color: var(--color-white);
+}
+
+.grid4 h2 {
+    color: var(--color-white);
+}
+
+.grid4 p {
+    color: var(--color-white);
+}
+
+.grid4 h3 {
+    color: var(--color-white);
+}
+
+.grid5 {
+    width: 300px;
+    height: 800px; 
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px var(--color-lightgray);
+    grid-row-start: 1;
+    grid-column: 4 / span 2;
+    background-color: var(--color-white);
+}
+
+.grid5 h1 {
+    color: var(--color-blackblue);
+}
+
+.grid5 h2 {
+    color: var(--color-blackblue);
+}
+
+.grid5 p {
+    color: var(--color-darkblue);
+}
+
+.grid5 h3 {
+    color: var(--color-blackblue);
+}
+
+.attribution { 
+    margin-top: 600px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
